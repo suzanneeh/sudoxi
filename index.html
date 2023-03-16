@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-U-Compatible" content="IT-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Sudoxi</title>
+</head>
+
+<body> 
+
+<div class = "header">
+        <nav id="main-menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.html">About Me</a></li>
+                  <li><a href="index.html">Services</a></li>
+                  <li><a href="index.html">Skills</a></li>
+                  <li><a href="#contact">Contact Me</a></li>
+                </ul>
+              </nav>
+</div>
+
+<div class = "box1" id = "about">
+        <img src="sudoxilogosmol.png" alt="img">
+</div>
+
+<div class = "text0">
+    <h1>Sudoxi is under Maintenance,
+        we sincerely<br> apologise for any inconvenience.</h1>
+</div>
+
+<div class = "contact" id = "contact">
+    <h2>For an urgent event<br> Please reach us at:<h2> 
+         <a href="sudo@sudoxi.com">sudo@sudoxi.com</a>
+</div>
+
+
+<p class = "text-center">
+        <div class = small> <small>This site is protected by reCAPTCHA and the Google <br> <a href = "https://policies.google.com/privacy">Privacy Policy</a> and
+         <a href = "https://policies.google.com/terms">Terms of Service</a> apply.</small>
+     </p>
+
+<div class = "footer">
+        <h1> © Sudoxi All Rights Reserved 2023</h1>
+</div>
+<!-----recaptcha V3------>
+<script src="https://www.google.com/recaptcha/api.js?
+render=6Le8p4ciAAAAALocj6vhggn3QawctaKor0HsoTCt"></script>
+
+<!-----recaptcha V3 validation------>
+<script src="/jmf/validation.js"></script>
+</html>
+<script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6Le8p4ciAAAAALocj6vhggn3QawctaKor0HsoTCt', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+          });
+        });
+      }
+</script>
+
+</body>
